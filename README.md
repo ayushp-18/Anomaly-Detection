@@ -41,3 +41,7 @@ Isolation Forest proved to be the most effective model for rare-event fraud dete
    ```bash
    git clone https://github.com/your-username/Anomaly-Detection.git
    cd Anomaly-Detection
+
+2.Install dependencies
+pip install -r requirements.txt
+
