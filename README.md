@@ -41,7 +41,21 @@ Isolation Forest proved to be the most effective model for rare-event fraud dete
    ```bash
    git clone https://github.com/your-username/Anomaly-Detection.git
    cd Anomaly-Detection
+Install dependencies
 
-2.Install dependencies
+bash
+Copy
+Edit
 pip install -r requirements.txt
+Run the notebook
 
+bash
+Copy
+Edit
+jupyter notebook "Anamoly Detection.ipynb"
+Future Improvements
+Evaluate additional anomaly detection methods (Autoencoders, GANs).
+
+Use cost-sensitive metrics (Precision, Recall, F1) instead of only accuracy for fraud detection.
+
+Deploy as an API for real-time fraud detection.
