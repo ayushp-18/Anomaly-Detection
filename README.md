@@ -32,10 +32,6 @@ Fraud detection in financial transactions is a critical problem as fraudulent ac
 - Isolation Forest consistently outperformed LOF and One-Class SVM in both accuracy and scalability.  
 - Precision and recall are critical metrics alongside accuracy in fraud detection problems.  
 
-## Dashboard / Model / Output
-- Jupyter Notebook implementation with visualizations of fraud vs non-fraud distribution.  
-- Model comparison plots showcasing Isolation Forest’s superior performance.  
-
 
 
 ## How to Run
@@ -68,6 +64,6 @@ Conclusion: Isolation Forest is the most effective anomaly detection method for 
 
 Explore deep learning methods such as Autoencoders and GANs for anomaly detection.
 
-Use cost-sensitive learning and metrics like Precision, Recall, and F1-score for better evaluation.
+Improve accuracy by improving the sample size.
 
-Deploy the model as an API for real-time fraud detection.
+
