@@ -1,40 +1,42 @@
 # Anomaly Detection in Credit Card Transactions
 
-## Overview
-This project applies unsupervised machine learning models to detect fraudulent credit card transactions in a highly imbalanced dataset. The dataset contains 284,807 transactions, of which only 0.172% are fraud cases, making it an excellent benchmark for anomaly detection techniques.
+## Brief One Line Summary
+Unsupervised machine learning models applied to detect fraudulent transactions in a highly imbalanced dataset of 284,807 credit card records.
 
-## Objective
-- Detect fraudulent transactions using anomaly detection algorithms.  
-- Handle highly imbalanced data effectively.  
-- Compare model performance based on accuracy and reliability.  
+## Overview
+Fraud detection in financial transactions is a critical problem as fraudulent activities cause significant losses. The challenge lies in detecting rare fraud events in highly imbalanced datasets. This project implements anomaly detection algorithms to identify fraudulent transactions effectively.
+
+## Problem Statement
+- Identify fraudulent transactions in credit card data.  
+- Work with an extremely imbalanced dataset (0.172% fraud cases).  
+- Compare multiple anomaly detection models to determine the most effective approach.  
 
 ## Dataset
 - Source: [Kaggle – Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)  
 - Records: 284,807  
 - Fraud cases: 492 (0.172%)  
-- Features: 30 (V1–V28 are PCA-transformed, Time, and Amount).  
+- Features: 30 (V1–V28 are PCA-transformed, plus Time and Amount).  
 
-## Technologies Used
+## Tools and Technologies
 - Python  
 - Pandas, NumPy, Matplotlib, Seaborn  
 - Scikit-learn  
 
-## Methods Implemented
+## Methods
 - Isolation Forest  
 - Local Outlier Factor (LOF)  
 - One-Class SVM  
 
-## Results
-- Isolation Forest: 99.74% accuracy (best performing model)  
-- Local Outlier Factor: Reliable but slightly lower accuracy  
-- One-Class SVM: Struggled with large dataset size  
-
-Isolation Forest proved to be the most effective model for rare-event fraud detection.
-
 ## Key Insights
-- Anomaly detection methods can effectively identify rare fraud cases in highly imbalanced data.  
-- Ensemble tree-based methods like Isolation Forest outperform distance/kernel-based methods on large datasets.  
-- Useful for financial fraud detection systems where false positives must be minimized.  
+- Fraud cases are extremely rare, requiring anomaly detection methods instead of standard classification.  
+- Isolation Forest consistently outperformed LOF and One-Class SVM in both accuracy and scalability.  
+- Precision and recall are critical metrics alongside accuracy in fraud detection problems.  
+
+## Dashboard / Model / Output
+- Jupyter Notebook implementation with visualizations of fraud vs non-fraud distribution.  
+- Model comparison plots showcasing Isolation Forest’s superior performance.  
+
+
 
 ## How to Run
 1. Clone this repository  
@@ -52,3 +54,20 @@ Isolation Forest proved to be the most effective model for rare-event fraud dete
 
 
 
+## Results & Conclusion
+
+Isolation Forest: 99.74% accuracy (best performing model).
+
+Local Outlier Factor: Reliable but slightly less accurate.
+
+One-Class SVM: Struggled with computation on large dataset.
+
+Conclusion: Isolation Forest is the most effective anomaly detection method for fraud detection in highly imbalanced datasets.
+
+## Future Work
+
+Explore deep learning methods such as Autoencoders and GANs for anomaly detection.
+
+Use cost-sensitive learning and metrics like Precision, Recall, and F1-score for better evaluation.
+
+Deploy the model as an API for real-time fraud detection.
